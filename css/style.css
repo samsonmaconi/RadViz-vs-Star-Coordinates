@@ -1,0 +1,61 @@
+@font-face {
+    /* Sourced from:  https://www.dafont.com/bebas-neue.font */
+    font-family: BebasNeue;
+    src: url("BebasNeue.otf");
+}
+
+body{
+    font-family: 'BebasNeue', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+}
+
+#header{
+    background-color: rgb(233, 252, 255);
+    border-radius: 20px;
+}
+
+svg{
+    display: block;
+    width: 100%;
+}
+
+.anchor-group, .legendItem{
+    cursor: pointer;
+}
+
+.form-group{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.leftlabel{
+    margin-left: auto;
+}
+.rightlabel{
+    margin-right: 10px;
+}
+
+.h1{
+    font-size: 33px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.h2{
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tooltip{
+    position: absolute;
+    z-index: 100;
+    visibility: hidden;
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Samson Maconi" />
+    <title>Visual Analytics - A3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+  </head>
+
+  <body>
+    <div id="header" class="form-group">
+      <label class="h2" for="uploadFile">Change csv dataset</label>
+      <input type="file" class="form-control-file" id="uploadFile" />
+      <label class="h2" for="adjustOpacity">Adjust Opacity for Instances</label>
+      <span class="leftlabel">0</span>
+      <input
+        id="adjustOpacity"
+        type="range"
+        min="0"
+        max="100"
+        value="85"
+        style="width: 300px; margin-right: 10px;"
+      />
+
+      <label class="h2" style="margin-left: 20px;" for="encodeShape"
+        >Add Shape Encoding</label
+      >
+      <input id="encodeShape" type="checkbox" style="margin-right: 20px;" />
+    </div>
+    <div id="main_rad">
+      <h1 class="h1">RadViz Implementation</h1>
+    </div>
+    <div id="main_star">
+      <h1 class="h1">Star Coordinates Implementation</h1>
+    </div>
+    <div id="main"></div>
+
+    <!--Load D3 -->
+    <script src="js/d3.min.js"></script>
+    <script src="js/geometricFunctions.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
